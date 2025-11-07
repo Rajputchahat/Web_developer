@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"/>
+    <style>
+    body{
+        background-color: yellowgreen ;
+        text-align: center;
+    }
+    select{
+        background-color: aliceblue;
+    }
+    button{
+        background-color: orange;
+        border-radius: 8px;
+        box-shadow: 3px;;
+        color: white;
+        font: bold;
+        width: 100px;
+        height: 5vh;
+    }
+    h1{ 
+        color: red;
+    }
+     </style>
+</head>
+<body>
+    <h1>Personal Details</h1>
+    <form action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name"required><br><br>
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" required><br><br>
+    <label for="email">Email id:</label>
+    <input type="email" id="email" required><br><br>
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" value="male" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="female">Female</label><br><br>
+    <label for="ph">Contact Number:</label>
+    <input type="tel" name="ph" id="ph" maxlength="10" pattern="[0-9]"
+    required> <br>
+    <h1>Education Qualification</h1>
+    <label for="edu">Degree:</label>
+    <select name="edu" id="edu">
+        <option value="">---Select Degree---</option>
+        <option value="mca">MCA</option>
+        <option value="mtech">MTECH</option>
+        <option value="btech">BTECH</option>
+        <option value="bsc">BSC</option>
+        <option value="bca">BCA</option>
+    </select><br><br>
+    <label for="eng">Engineering:</label>
+    <select name="eng" id="eng">
+        <option value="">---Select Branch---</option>
+        <option value="mca">CS</option>
+        <option value="mtech">AI</option>
+        <option value="btech">ML</option>
+        <option value="bsc">CSE</option>
+        <option value="bca">EC</option>+
+    </select><br><br>
+      <label for="hobby">Hobbies:</label>
+    <input type="checkbox" name="hobby" value="chess" id="chess">
+    <label for="male">Playing Chess</label>
+    <input type="checkbox" name="book" value="book" id="book">
+    <label for="female">Reading Books</label><br><br>
+    <h1>Residentail Details</h1>
+    <label for="addres">Address</label><br>
+    <textarea name="address" id="address" column = "9"></textarea><br><br>
+    <label for="file">Attach Resume</label>
+    <input type="file" name="file" id="file"><br><br>
+    <button>Submit   <i class="fa-solid fa-play"></i></button>
+    </form>
+</body>
+</html>
